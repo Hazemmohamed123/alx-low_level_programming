@@ -7,7 +7,7 @@
 *   * @s: string to evaluate
 *    *
 *     * Return: number of words
-*      */
+*/
 int count_word(char *s)
 {
 int flag, c, w;
@@ -48,7 +48,7 @@ for (i = 0; i <= len; i++)
 {
 if (str[i] == ' ' || str[i] == '\0')
 {
-if (c)		
+if (c)
 {
 end = i;
 tmp = (char *) malloc(sizeof(char) * (c + 1));
