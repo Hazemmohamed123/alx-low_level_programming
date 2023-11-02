@@ -7,7 +7,6 @@ char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
-
 /**
  * find_len - Finds the length of a string.
  * @str: The string to be measured.
@@ -21,7 +20,6 @@ while (*str++)
 len++;
 return (len);
 }
-
 /**
  * create_xarray - Creates an array of chars and initializes it with
  *                 the character 'x'. Adds a terminating null byte.
@@ -43,7 +41,6 @@ array[index] = 'x';
 array[index] = '\0';
 return (array);
 }
-
 /**
  * iterate_zeroes - Iterates through a string of numbers containing
  *                  leading zeroes until it hits a non-zero number.
@@ -57,7 +54,6 @@ while (*str && *str == '0')
 str++;
 return (str);
 }
-
 /**
  * get_digit - Converts a digit character to a corresponding int.
  * @c: The character to be converted.
@@ -76,7 +72,6 @@ exit(98);
 }
 return (digit);
 }
-
 /**
  * get_prod - Multiplies a string of numbers by a single digit.
  * @prod: The buffer to store the result.
@@ -118,7 +113,6 @@ tens = num / 10;
 if (tens)
 *prod = (tens % 10) + '0';
 }
-
 /**
  * add_nums - Adds the numbers stored in two strings.
  * @final_prod: The buffer storing the running final product.
@@ -153,7 +147,6 @@ next_prod--;
 if (tens)
 *final_prod = (tens % 10) + '0';
 }
-
 /**
  * main - Multiplies two positive numbers.
  * @argv: The number of arguments passed to the program.
