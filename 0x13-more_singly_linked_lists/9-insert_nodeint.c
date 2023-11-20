@@ -22,7 +22,7 @@ new->next = NULL;
 if (idx == 0)
 {
 new->next = *head;
-*head = new; 
+*head = new;
 return (new);
 }
 for (i = 0; temp && i < idx; i++)
