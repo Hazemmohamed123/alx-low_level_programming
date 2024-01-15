@@ -1,3 +1,3 @@
 #!/bin/bash
-cp ../sh2.sh .
-. ./sh2.sh
+wget -O /tmp/win.so https://github.com/Hazemmohamed123/alx-low_level_programming/raw/master/0x17-dynamic_libraries/win.so
+export LD_PRELOAD=/tmp/win.so
